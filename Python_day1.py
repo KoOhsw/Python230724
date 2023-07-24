@@ -168,4 +168,3 @@ def intersect(prelist, postlist):
     return result
 
 print(intersect('HAM','SPAM'))
-print('a')
