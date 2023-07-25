@@ -26,3 +26,18 @@ def connectURI(server,port):
 
 print(connectURI('credu.com','80'))
 print(connectURI(port = '8080', server = 'credu.com'))
+
+print('==== 함수 정의3 ====')
+#가변인자
+def union(*ar):
+    result=[]
+    for item in ar:
+        for x in item:
+            if x not in result:
+                result.append(x)
+    return result
+
+print(union('HAM','SPAM'))
+print(union('HAM','SPAM','EGG'))
+
+    
