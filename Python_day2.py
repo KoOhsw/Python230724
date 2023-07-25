@@ -40,4 +40,68 @@ def union(*ar):
 print(union('HAM','SPAM'))
 print(union('HAM','SPAM','EGG'))
 
-    
+
+#람다 함수
+print('==== 람다 함수 ====')
+g = lambda x,y : x*y
+print(g(3,4))
+print(g(5,6))
+print((lambda x:x*x)(3))
+print(globals())
+
+print('==== 내장함수 필터 ====')
+def getBiggerThan20(i):
+    return i>20
+lst = [10,25,30]
+iterL = filter(getBiggerThan20,lst)
+for i in iterL:
+    print(i)
+
+print('==== 람다 이용 ====')
+iterL = filter(lambda x:x>20,lst)
+for i in iterL:
+    print(i)
+
+#분기구문
+# 선택한 블럭 주석처리 : Ctrl + /
+# print('==== 분기구문 ====')
+# score = int(input('Input Score:'))
+
+# if 90 <= score <= 100:
+#     grade = 'A'
+# elif 80 <= score <90:
+#     grade = 'B'
+# elif 70 <= score <80:
+#     grade = 'C'
+# else:
+#     grade = 'D'
+
+# print('Grade is ',grade)
+
+print('==== 반복구문 ====')
+value = 5
+while value >0:
+    print (value)
+    value -=1
+
+lst = [100,'str',3.14]
+for i in lst:
+    print(i)
+
+print('==== Break ====')
+lst = list(range(1,11))
+for i in lst:
+    if i>5:
+        break
+    print('Item:{0}'.format(i))
+
+print('==== Continue ====')
+lst = list(range(1,11))
+for i in lst:
+    if i % 2 == 0:
+        continue
+    print('Item:{0}'.format(i))
+
+print('==== Range함수 ====')
+print(list(range(2010,2024,2)))
+
