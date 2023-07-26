@@ -16,12 +16,12 @@ print('{0:x}\n{1:b}\n{2:,}\n{3:e}\n{4:f}\n{5:,.2f}'.format(10,10,1500,4/3,4/3,15
 
 print('==== 파일 입출력 ====')
 # 파일 쓰기
-f = open('c:\\work\\demo.txt','wt',encoding='utf-8')
+f = open('c:\\work\\day3_1.txt','wt',encoding='utf-8')
 f.write('First\nSecond\nThird')
 f.close()
 
 # 파일읽기
-f = open(r'c:\work\demo.txt','rt',encoding='utf-8')
+f = open(r'c:\work\day3_1.txt','rt',encoding='utf-8')
 result = f.read()
 print('-- 전체읽기 --')
 print(result)
