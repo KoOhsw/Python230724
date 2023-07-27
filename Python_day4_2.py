@@ -22,4 +22,4 @@ for post in posts:
 
     print(f'{title},{price},{addr}')
     f.write(f'{title},{price},{addr}\n')
-f.close
+f.close()
