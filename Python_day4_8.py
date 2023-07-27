@@ -2,8 +2,8 @@
 # MainWindow.ui(화면단) + MainWindow.py(로직단) - 현재파일
 
 import sys
-from PyQt5.QtWidgets import *
-from PyQt5 import uic
+from PyQt6.QtWidgets import *
+from PyQt6 import uic
 
 # 웹통신
 import requests
@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 
 # 디자인된 문서 로딩
-form_class = uic.loadUiType('MainWindow.ui')[0]
+form_class = uic.loadUiType('Python_day4_8.ui')[0]
 
 # 폼클래스 정의
 class DemoForm(QMainWindow, form_class):
@@ -54,5 +54,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     demoForm = DemoForm()
     demoForm.show()
-    app.exec_()
+    app.exec()
 

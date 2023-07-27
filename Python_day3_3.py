@@ -39,18 +39,18 @@ print('==== os.path 모듈 ====')
 import os
 #print(dir(os))
 print(os.path.abspath('python.exe'))
-print(os.path.basename('c:\\python310\\python.exe'))
-if os.path.isfile('c:\\python310\\python.exe'):
-    print('파일있음')
-else :
-    print('파일없음')
+#print(os.path.basename('c:\\python310\\python.exe'))
+#if os.path.isfile('c:\\python310\\python.exe'):
+#    print('파일있음')
+#else :
+#    print('파일없음')
 
 print('운영체제 이름은 : ', os.name)
 # print('환경변수 : ', os.environ)
 # print(os.system('notepad.exe'))
 print('현재폴더 :', os.getcwd())
 os.chdir('..')
-os.chdir('c:\\work')
+#os.chdir('c:\\work')
 
 # glob 모듈
 import glob

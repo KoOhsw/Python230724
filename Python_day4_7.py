@@ -2,8 +2,8 @@
 # DemoForm.ui(화면단) + DemoForm.py(로직단) - 현재파일
 
 import sys
-from PyQt5.QtWidgets import *
-from PyQt5 import uic
+from PyQt6.QtWidgets import *
+from PyQt6 import uic
 
 # 디자인된 문서 로딩
 form_class = uic.loadUiType('Python_day4_7.ui')[0]
@@ -21,5 +21,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     demoForm = DemoForm()
     demoForm.show()
-    app.exec_()
-
+    app.exec()
