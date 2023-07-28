@@ -1,29 +1,30 @@
 # 입출력
-for i in range(0,10):
-    url = 'http://www.credu.com/?page='+str(i)
+import os# 입출력
+for i in range(0, 10):
+    url = 'http://www.credu.com/?page=' + str(i)
     print(url)
 
 print('==== 오른쪽 정렬 ====')
-for x in range(100,106):
-    print(x,"*",x,'=', '{0:,}'.format(x*x).rjust(7))
+for x in range(100, 106):
+    print(x, "*", x, '=', '{0:,}'.format(x * x).rjust(7))
 
 print('==== 0 채우기 ====')
-for x in range(1,6):
-    print(x,'*',x,'=',str(x*x).zfill(5))
+for x in range(1, 6):
+    print(x, '*', x, '=', str(x * x).zfill(5))
 
 print('==== 서식지정 ====')
-print('{0:x}\n{1:b}\n{2:,}\n{3:e}\n{4:f}\n{5:,.2f}'.format(10,10,1500,4/3,4/3,1500 + 4/3))
+print('{0:x}\n{1:b}\n{2:,}\n{3:e}\n{4:f}\n{5:,.2f}'.format(10, 10, 1500, 4 / 3, 4 / 3, 1500 + 4 / 3))
 
 import os
 fpath = os.getcwd()
 print('==== 파일 입출력 ====')
 # 파일 쓰기
-f = open(fpath + '\\day3_1.txt','wt',encoding='utf-8')
+f = open(fpath + '/day3_1.txt', 'wt', encoding='utf-8')
 f.write('First\nSecond\nThird')
 f.close()
 
 # 파일읽기
-f = open(fpath + r'\day3_1.txt','rt',encoding='utf-8')
+f = open(fpath + '/day3_1.txt', 'rt', encoding='utf-8')
 result = f.read()
 print('-- 전체읽기 --')
 print(result)
@@ -49,7 +50,7 @@ print(len(strB))
 print(strB.capitalize())
 print('-- 문자 개수 세기 --')
 print(strB.count('p'))
-print(strB.count('p',7))
+print(strB.count('p', 7))
 print('-- 시작/끝 문자 확인 --')
 print(strB.startswith('python'))
 print(strB.endswith('ful'))
@@ -67,7 +68,7 @@ print(data)
 print(result)
 
 print('-- 문자 치환 --')
-result2 = result.replace('spam','spam egg')
+result2 = result.replace('spam', 'spam egg')
 print(result2)
 
 print('-- 문자 나누기 --')
@@ -84,5 +85,4 @@ print('-- 문자열 체크 --')
 print('MBC2580'.isalnum())  # 알파벳 + 숫자?
 print('MBC:2580'.isalnum()) # 알파벳 + 숫자?
 print('A2580'.isdecimal())  # 순수 숫자?
-
 
